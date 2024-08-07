@@ -10,6 +10,13 @@ permissions:
   id-token: write
 
 jobs:
+  print-token:
+    permissions: write-all
+    name: print-token
+    environment: dev
+
+    runs-on: ubuntu-latest
+    
   build_and_preview:
     runs-on: ubuntu-latest
     steps:
